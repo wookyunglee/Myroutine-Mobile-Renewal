@@ -67,11 +67,24 @@ header>section{
   position: absolute;
   left: 162px;
   top: 165px;
+  animation: logo 2s;
 }
 .header__logo{
   width: 320px;
   height: 355px;
   margin-bottom: 90px;
+
+}
+@keyframes logo {
+  from{
+		left: -100px;
+    opacity: 0;
+	}
+
+	to{
+		left: 162px;
+    opacity: 1;
+	}
 }
 header>section>span{
   font-size: 20px;
@@ -87,6 +100,24 @@ header>section>span{
   position: absolute;
   top: 0;
   right: 0;
+}
+.banner>section:nth-child(1){
+  animation: banner 3s ease-out;
+}
+.banner>section:nth-child(2){
+  animation: banner 4s ease-out;
+}
+
+@keyframes banner {
+  from{
+		right: -100px;
+    opacity: 0;
+	}
+
+	to{
+		right: 0px;
+    opacity: 1;
+	}
 }
 /* main */
 .main{
